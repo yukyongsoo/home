@@ -201,6 +201,15 @@ module.exports =  {
 					scale : "3~10",
 					problem : "없음",
 					text : "사원/대리급 교육 담당 및 지식전수, 개발 가이드 제공, 트러블 슈팅 지원 등. CS 교육, 패턴 , 트렌드, 알고리즘 등"
+				},
+				{
+					name : "카카오페이 펀딩 서비스 출시",
+					work : "개발 / 설계",
+					skill : "QUERY DSL, KOTLIN, SPRING CLOUD",
+					result : "카카오톡에서 투자 서비스 출시.",
+					scale : "2~6",
+					problem : "피크 타임 트랜잭션 과도한 몰림 현상.",
+					text : "카카오페이 서비스 출시."
 				}
 			]		
 		}			

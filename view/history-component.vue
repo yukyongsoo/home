@@ -28,9 +28,9 @@
 <script>
 module.exports =  {
 	data () {
-		return {
-			active : 'none',
-			cur : -1,
+		return {		
+			active : 'inline',
+			cur : 0,
 			headers: [
 				{ text: '프로젝트', value: 'name'},
 				{ text: '기간', value: 'priod'},
@@ -112,13 +112,7 @@ module.exports =  {
 		}
 	},
 	methods: {
-		detail: function (data,event) {
-			if(this.cur == data){
-				this.active = 'none';
-				this.cur = -1;
-			}
-			else{
-				this.active = 'inline';
+		detail: function (data,event) {						
 				this.cur = data;
 				Vue.prototype.$vuetify.goTo('#target',  {
 			          duration: 1000,
@@ -126,7 +120,6 @@ module.exports =  {
 			          easing: 'easeOutQuart'
 			    });
 			}
-		}
 	}
 }
 </script>

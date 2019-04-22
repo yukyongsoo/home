@@ -18,7 +18,7 @@
 						            <v-flex v-for="(image,j) in item.images" :key="j" xs4 d-flex>
 						              <v-card flat tile class="d-flex">
 						              	<v-layout class="ma-1" column>
-						              		  <v-img contain :src="`../assets/skill/${image.path}`" aspect-ratio="1" class="lighten-2"></v-img>
+						              		  <v-img contain :src="`assets/skill/${image.path}`" aspect-ratio="1" class="lighten-2"></v-img>
 						              		  <div class="body-2">{{image.name}}</div>
 						              	</v-layout>
 						              </v-card>
@@ -31,7 +31,7 @@
 				</v-flex>
 					
 				<v-flex md4 xs12>
-					<v-img src="../assets/level.PNG" fill-height contain aspect-ratio="1.0" class="lighten-3"></v-img>
+					<v-img src="assets/level.PNG" fill-height contain aspect-ratio="1.0" class="lighten-3"></v-img>
 				</v-flex>
 			</v-layout>
 	</v-flex>

@@ -26,7 +26,7 @@
 							<v-layout row wrap>
 								<v-flex xs12 md8 align-center>
 									<v-carousel>    		
-										<v-carousel-item v-for="(image,i) in item.images" :key="i"  :src="`../../assets/dev/${image}`" contain>
+										<v-carousel-item v-for="(image,i) in item.images" :key="i"  :src="`assets/dev/${image}`" contain>
 										</v-carousel-item>			
 									</v-carousel>  
 								</v-flex>
@@ -60,7 +60,7 @@
         <v-divider></v-divider>
         <v-dialog v-model="dialog" width="400">
         	<v-card>
-        		<v-img src="../assets/sorry.gif" height="300px"></v-img>
+        		<v-img src="assets/sorry.gif" height="300px"></v-img>
         		<v-card-title class="headline lighten-2" primary-title>죄송합니다 ㅠㅠ</v-card-title>
 		        <v-card-text>지금은 잠시 AWS를 쉬게하고있어요...</v-card-text>
 			</v-card>

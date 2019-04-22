@@ -11,7 +11,7 @@
 			<v-layout row wrap justify-center>
 				<v-flex xs12 sm4 >      
 					<div class="headline text-xs-center"><p>Yuk Yong Soo</p></div>
-					<v-img src='../assets/me.png' class="lighten-2"></v-img>
+					<v-img src='assets/me.png' class="lighten-2"></v-img>
 				</v-flex>
 				
 				<v-flex xs12 sm4>

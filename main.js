@@ -44,7 +44,7 @@ Vue.component('loading-screen', {
 	    updatePleaseWait () {
 	      if (this.isLoading && this.pleaseWaitInstance == null) {
 	        this.pleaseWaitInstance = pleaseWait({
-	          logo: '/assets/Spinner.gif',
+	          logo: 'assets/Spinner.gif',
 	          backgroundColor: '#6799FF',
 	          loadingHtml: '<p style="color : white;">방문해 주셔서 감사합니다!! 잠시만 기다려주세요!!</p>'
 	        })

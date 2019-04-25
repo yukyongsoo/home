@@ -76,7 +76,6 @@
 							name : "DB",
 							images : [
 								{name : "H2" , path: "db/H2.png"},
-								{name : "HazelCast" , path: "db/HazelCast.PNG"},
 								{name : "HyperSql" , path: "db/hypersql.png"},
 								{name : "MS-sql" , path: "db/MSSQL.png"},
 								{name : "Oracle" , path: "db/oracle.PNG"},
@@ -98,7 +97,9 @@
 								{name : "Jenkins" , path: "tools/jenkins.JPG"},
 								{name : "Docker" , path: "leaned/docker.png"},
 								{name : "Jd-Core" , path: "etc/Jd-Core.PNG"},
-								{name : "Elastic" , path : "etc/elastic.png"}
+								{name : "Elastic" , path : "etc/elastic.png"},
+								{name : "HazelCast" , path: "tools/HazelCast.PNG"},
+								{name : "Redis" , path: "tools/redis.png"}
 							]
 						},
 						{

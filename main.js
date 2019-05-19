@@ -26,45 +26,7 @@ Vue.component('short-component');
 Vue.component('skill-component');
 Vue.component('hisdetail-component');
 
-Vue.component('loading-screen', {
-	  template: '<span :title="isLoading"></span>',
-	  props: ['isLoading'],
-	  data () {
-	    return {
-	      pleaseWaitInstance: null
-	    }
-	  },
-	  mounted () {
-	    this.updatePleaseWait()
-	  },
-	  beforeUpdate () {
-	    this.updatePleaseWait()
-	  },
-	  methods: {
-	    updatePleaseWait () {
-	      if (this.isLoading && this.pleaseWaitInstance == null) {
-	        this.pleaseWaitInstance = pleaseWait({
-	          logo: 'assets/Spinner.gif',
-	          backgroundColor: '#6799FF',
-	          loadingHtml: '<p style="color : white;">방문해 주셔서 감사합니다!! 잠시만 기다려주세요!!</p>'
-	        })
-	      }
-	      if (!this.isLoading && this.pleaseWaitInstance != null) {
-	        this.pleaseWaitInstance.finish()
-	      }
-	    }
-	  }
-})
-
-
 var main = new Vue({
-	 data: {
-		    isLoading: true
-	 }, 
-	 mounted () {
-		 setTimeout(() => {
-			 this.isLoading = false
-		 }, 5000)
-	 }
+
 }).$mount('#app')
 

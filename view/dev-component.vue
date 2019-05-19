@@ -41,10 +41,10 @@
 					                    	<p >{{item.stack}}</p>
 					                    	
 					                    	<B class="mb-0">Module</B>
-					                    	<p class="mb-0" v-for="(line,i) in item.mod" :key="'${item.name}-A-${i}'">{{line}}</p>
+					                    	<p class="mb-0" v-for="line in item.mod" :key="line">{{line}}</p>
 											
 											<B class="mt-4">Function</B>
-					                    	<p v-for="(line,i) in item.func" :key="'${item.name}-B-${i}'" class="mb-0">{{line}}</p>							
+					                    	<p v-for="line in item.func" :key="line" class="mb-0">{{line}}</p>							
 					                    </v-card-text>
 									</v-card>
 								</v-flex>

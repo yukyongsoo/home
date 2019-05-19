@@ -6,8 +6,6 @@
 <script src="https://cdn.jsdelivr.net/npm/http-vue-loader@1.4.0/src/httpVueLoader.min.js"></script>
 <script src="es6-promise.auto.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/please-wait/0.0.5/please-wait.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/please-wait/0.0.5/please-wait.min.css"/>
 <link rel="stylesheet" href="https://unpkg.com/vue2-animate/dist/vue2-animate.min.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"/>
@@ -15,18 +13,39 @@
 </head>
 <body>
 <v-app id='app'>
-<loading-screen :is-loading="isLoading"></loading-screen> 		
 <v-content>
+  <v-navigation-drawer app>
+      <v-layout justify-center align-center column fill-height py-5>
+          <h2 class="display-3 font-weight-black primary--text mb-2">Developer</h2>
+          <div class="display-1 mb-2">Yuk Yong Soo</div>
+          <span class="title font-weight-light mb-5">This Page Dev Now..Sorry</span>
+          <div>
+            <v-btn flat @click="$vuetify.goTo(100)">Short Career</v-btn>
+          </div>
+          <div>
+            <v-btn flat @click="$vuetify.goTo(200)">Learn Skill</v-btn>
+          </div>
+          <div>
+            <v-btn flat @click="$vuetify.goTo(300)">Personal developing</v-btn>
+          </div>
+          <div>
+            <v-btn flat @click="$vuetify.goTo(400)">Project History</v-btn>
+          </div>
+          <div>
+            <v-btn flat @click="$vuetify.goTo(500)">Contact Me</v-btn>
+          </div>
+      </v-layout>
+  </v-navigation-drawer>
 	<v-toolbar class="white">
       <v-toolbar-title class="caption">Copyright ©Yuk Yong Soo, All rights reserved.</v-toolbar-title>
     </v-toolbar>
 	
-	 <logo-component></logo-component>
-	 <short-component></short-component>
-	 <skill-component></skill-component>	 
-	 <dev-component></dev-component>		 
-	 <history-component></history-component>	 
-     <contact-component></contact-component>
+	  <logo-component></logo-component>
+	  <short-component></short-component>
+	  <skill-component></skill-component>	 
+	  <dev-component></dev-component>		 
+	  <history-component></history-component>	 
+    <contact-component></contact-component>
      
       <v-footer class="blue darken-2" inset >
         <v-layout row talign-center>
@@ -37,7 +56,7 @@
           </v-flex>
         </v-layout>
       </v-footer>
-</v-content>		
+</v-content>
 </v-app>
 <!-- <script src="/webjars/vue/2.5.16/vue.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

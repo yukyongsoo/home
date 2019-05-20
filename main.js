@@ -1,13 +1,23 @@
-Vue.use(Vuetify);
+Vue.use(Vuetify, {
+    theme: {
+        primary: '#1976D2',
+        secondary: '#424242',
+        accent: '#82B1FF',
+        error: '#FF5252',
+        info: '#2196F3',
+        success: '#4CAF50',
+        warning: '#FFC107'
+    }
+});
 
-httpVueLoader.httpRequest = function(url) {
+httpVueLoader.httpRequest = function (url) {
     return axios.get(url)
-    .then(function(res) {
-        return res.data;
-    })
-    .catch(function(err) {
-        return Promise.reject(err.status);
-    });
+        .then(function (res) {
+            return res.data;
+        })
+        .catch(function (err) {
+            return Promise.reject(err.status);
+        });
 }
 
 httpVueLoader.register(Vue, 'view/contact-component.vue');
@@ -29,4 +39,3 @@ Vue.component('hisdetail-component');
 var main = new Vue({
 
 }).$mount('#app')
-

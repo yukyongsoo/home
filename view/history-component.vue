@@ -21,7 +21,6 @@
 	</v-flex>
 </v-layout>
 <hisdetail-component id='target' v-bind:style="{ display : active }" :cur='cur'></hisdetail-component>
-<v-divider></v-divider>
 </section>
 </template>
 

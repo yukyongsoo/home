@@ -20,7 +20,6 @@ httpVueLoader.httpRequest = function (url) {
         });
 }
 
-httpVueLoader.register(Vue, 'view/contact-component.vue');
 httpVueLoader.register(Vue, 'view/logo-component.vue');
 httpVueLoader.register(Vue, 'view/dev-component.vue');
 httpVueLoader.register(Vue, 'view/history-component.vue');
@@ -28,7 +27,6 @@ httpVueLoader.register(Vue, 'view/short-component.vue');
 httpVueLoader.register(Vue, 'view/skill-component.vue');
 httpVueLoader.register(Vue, 'view/hisdetail-component.vue');
 
-Vue.component('contact-component');
 Vue.component('logo-component');
 Vue.component('dev-component');
 Vue.component('history-component');

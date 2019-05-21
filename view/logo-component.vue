@@ -1,20 +1,18 @@
 <template>
-<section> 
-	<v-parallax src="assets/section.jpg" height="380">
-		<v-layout column align-center justify-center>
+	<v-img src="assets/section.jpg" :aspect-ratio="16/10">
+		<v-layout column align-center justify-center fill-height>
 			<transition appear name="fade">
-				<div class="headline white--text mb-3 text-xs-center"
-				 style="animation-duration: 4s" >This Page Under Renewal</div> 
-			<!-- <transition appear name="fade">
-				<div class="headline white--text mb-3 text-xs-center"
-				 style="animation-duration: 4s" >Development has never been easier</div> 
+				<h1 class="display-2 mb-5 primary--text">This Page Under Renewal</h1> 
 			</transition>
 			<transition appear name="fade">
-				<em  style="animation-duration: 12s">But We Can</em>
-			</transition> -->
+				<h1 class="display-2 mb-5"
+				 style="animation-duration: 5s" >Development has never been easier</h1> 
+			</transition>
+			<transition appear name="fade">
+				<h3 class="display-1" style="animation-duration: 15s">But We Can</h3>
+			</transition>
         </v-layout>
-	</v-parallax>
-</section>
+	</v-img>
 </template>
 
 <script>

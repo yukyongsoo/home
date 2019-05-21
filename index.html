@@ -27,13 +27,10 @@
           <v-btn flat @click="$vuetify.goTo('#skill')">Learn Skill</v-btn>
         </div>
         <div>
-          <v-btn flat @click="$vuetify.goTo('#dev')">Personal developing</v-btn>
-        </div>
-        <div>
           <v-btn flat @click="$vuetify.goTo('#history')">Project History</v-btn>
         </div>
         <div>
-          <v-btn flat @click="$vuetify.goTo('#contact')">Contact Me</v-btn>
+          <v-btn flat @click="$vuetify.goTo('#dev')">Personal developing</v-btn>
         </div>
         <v-list class="transparent mt-auto">
           <v-list-tile>
@@ -78,8 +75,8 @@
         <v-container fluid>
           <short-component id="short"></short-component>
           <skill-component id="skill"></skill-component>
-          <dev-component id="dev"></dev-component>
           <history-component id="history"></history-component>
+          <dev-component id="dev"></dev-component>
         </v-container>
       </div>
     </v-content>

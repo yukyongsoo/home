@@ -4,29 +4,29 @@
 	<v-layout row wrap>
 		
 		<v-flex d-flex xs12 sm3 child-flex>
-        	<v-card color="blue lighten-2" dark tile flat>
+        	<v-card dark tile flat>
           		<v-card-text>프로젝트명</v-card-text>
         	</v-card>
       	</v-flex>
       <v-flex d-flex xs12 sm3>
-        <v-card color="lighten-2" tile flat>
+        <v-card tile flat>
           <v-card-text>{{curItem.name}}</v-card-text>
         </v-card>
       </v-flex>
       
       <v-flex d-flex xs12 sm3 child-flex>
-        <v-card color="blue lighten-2" dark tile flat>
+        <v-card dark tile flat>
           <v-card-text>규모</v-card-text>
         </v-card>
       </v-flex>     
       <v-flex d-flex xs12 sm3>
-        <v-card color="lighten-2" tile flat>
+        <v-card tile flat>
           <v-card-text>{{curItem.scale}}</v-card-text>
         </v-card>
       </v-flex>
 	
       <v-flex d-flex xs12 sm3 child-flex>
-        <v-card color="blue lighten-2" dark tile flat>
+        <v-card dark tile flat>
           <v-card-text>문제점</v-card-text>
         </v-card>
       </v-flex> 
@@ -37,7 +37,7 @@
       </v-flex>
       
       <v-flex d-flex xs12 sm3 child-flex>
-        <v-card color="blue lighten-2" dark tile flat>
+        <v-card dark tile flat>
           <v-card-text>담당 업무</v-card-text>
         </v-card>
       </v-flex>
@@ -48,7 +48,7 @@
       </v-flex>
       
       <v-flex d-flex xs12 sm3 child-flex>
-        <v-card color="blue lighten-2" dark tile flat>
+        <v-card dark tile flat>
           <v-card-text>사용 기술</v-card-text>
         </v-card>
       </v-flex> 
@@ -59,7 +59,7 @@
       </v-flex>
       
       <v-flex d-flex xs12 sm3 child-flex>
-        <v-card color="blue lighten-2" dark tile flat>
+        <v-card dark tile flat>
           <v-card-text>성과</v-card-text>
         </v-card>
       </v-flex>
@@ -72,7 +72,7 @@
       <v-flex d-flex xs12>
         <v-layout column>
           <v-flex d-flex>
-            <v-card color="blue lighten-2" dark tile flat>
+            <v-card  dark tile flat>
               <v-card-text>업무 내용 </v-card-text>
             </v-card>
           </v-flex>
@@ -210,6 +210,15 @@ module.exports =  {
 					scale : "2~6",
 					problem : "피크 타임 트랜잭션 과도한 몰림 현상.",
 					text : "카카오페이 서비스 출시."
+				},
+				{
+					name : "SSG 페이 펀딩 서비스 개발",
+					work : "개발 / 설계",
+					skill : "JOOQ, KOTLIN, SPRING WEBFLUX",
+					result : "SSGPAY에서 투자 서비스 연동.",
+					scale : "2~6",
+					problem : "",
+					text : "미정"
 				}
 			]		
 		}			

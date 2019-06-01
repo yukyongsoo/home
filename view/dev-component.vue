@@ -8,20 +8,6 @@
       </v-flex>
 
       <v-flex xs10>
-        <v-carousel hide-delimiters>
-          <v-carousel-item contain>
-            <v-sheet class="d-flex" color="grey lighten-3">
-							
-
-
-
-
-						</v-sheet>
-          </v-carousel-item>
-        </v-carousel>
-      </v-flex>
-
-      <v-flex xs10>
         <v-container grid-list-xl>
           <v-layout column>
             <v-flex v-for="(item,i) in items" :key="i">
@@ -29,7 +15,6 @@
                 <v-flex xs12 md4>
                   <h2 class="headline">{{item.name}}</h2>
                   <span class="subheading">{{item.text}}</span>
-                  <v-btn color="info" @click="demo(item.demo)">Demo</v-btn>
                 </v-flex>
 
                 <v-flex>
@@ -72,13 +57,6 @@
     </v-layout>
 
     <v-divider></v-divider>
-    <v-dialog v-model="dialog" width="400">
-      <v-card>
-        <v-img src="assets/sorry.gif" height="300px"></v-img>
-        <v-card-title class="headline lighten-2" primary-title>죄송합니다 ㅠㅠ</v-card-title>
-        <v-card-text>지금은 잠시 AWS를 쉬게하고있어요...</v-card-text>
-      </v-card>
-    </v-dialog>
   </section>
 </template>
 
@@ -86,7 +64,6 @@
 module.exports = {
   data: function data() {
     return {
-      dialog: false,
       items: [
         {
           icon: "color_lens",

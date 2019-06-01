@@ -1,123 +1,49 @@
 <template>
-<section>
-<v-layout column class="my-5">
-	<v-flex class="my-5">
-		<div class="text-xs-center">
-        	<h2 class="headline">Learn Skill</h2>
-		</div>
-	</v-flex>
-	<v-flex wrap>	
-			<v-layout row wrap justify-center> 
-				<v-flex md4 xs12>
-					<v-tabs dark>
-				      <v-tab v-for="(item,i) in itemset" :key="i" ripple>{{item.name}}</v-tab>
-				      <v-tab-item v-for="(item,i) in itemset" :key="i">
-				        <v-card flat>
-				        	<v-container grid-list-xl>
-	          					<v-layout row wrap>
-						            <v-flex v-for="(image,j) in item.images" :key="j" xs4 d-flex>
-						              <v-card flat tile class="d-flex">
-						              	<v-layout class="ma-1" column>
-						              		  <v-img contain :src="`assets/skill/${image.path}`" aspect-ratio="1" class="lighten-2"></v-img>
-						              		  <div class="body-2">{{image.name}}</div>
-						              	</v-layout>
-						              </v-card>
-						            </v-flex>
-								</v-layout>
-							</v-container>
-				        </v-card>
-				      </v-tab-item>
-				    </v-tabs>
-				</v-flex>
-					
-				<v-flex md4 xs12>
-					<v-img src="assets/level.PNG" fill-height contain aspect-ratio="1.0" class="lighten-3"></v-img>
-				</v-flex>
-			</v-layout>
-	</v-flex>
-</v-layout>
-<v-divider></v-divider>
-</section>
+  <v-layout wrap>
+    <v-flex>
+      <h4 class="display-1 text-xs-center mb-5">My Education</h4>
+      <B class="mb-0">Education</B>
+      <p class="mb-0">충북대학교 학사</p>
+      <p>Major in computer engineering ( 3.46 / 4.5 )</p>
+
+      <B class="mb-0">Write Paper</B>
+      <p>
+        <a href="https://www.computer.org/csdl/proceedings/icisa/2013/0602/00/06579462.pdf">
+			ICISA 2013 : Comparison of Extraction Methods for bug Tracking System Analysis</a>
+      </p>
+
+      <B>Certificate</B>
+      <p class="mb-0">정보처리기능사 - 2002/10/07</p>
+      <p>OPIC IL - 2013/09/15</p>
+
+      <B class="mb-0">Career</B>
+      <p class="mb-0">2014 ~ 2015 : ㈜ 스펜오컴– 연구개발</p>
+      <p class="mb-0">2016 ~ 2018.07 : ㈜ Inzent – 프로젝트 수행 및 기술지원</p>
+      <p>2018.11 ~ Now : ㈜ 테라핀테크 – 플랫폼 개발</p>
+    </v-flex>
+
+    <v-flex>
+      <h4 class="display-1 text-xs-center mb-5">My Skill</h4>
+	  <v-layout class="mb-1" v-for="(item,i) in skillItems" :key="i">
+		  <v-flex><p>{{item.name}}</p></v-flex>
+		  <v-flex><v-rating :value="item.value" readonly></v-rating></v-flex>
+	  </v-layout>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
-	module.exports = {
-		data: function data() {
-			return {
-					itemset : [
-						{
-							name : "F/W",
-							images : [
-								{name : "RAP" , path: "fw/RAP.PNG"},
-								{name : "Spring Web" , path: "fw/spring.PNG"},
-								{name : "Spring Cloud", path: "fw/springCloud.PNG"},
-								{name : "Vaadin", path: "fw/vaadin.PNG"}
-							]
-						},
-						{
-							name : "Network",
-							images : [
-								{name : "Http-Components" , path: "net/httpcomponents.png"},
-								{name : "Mina" , path: "net/mina.png"},
-								{name : "Netty", path: "net/netty.PNG"}
-							]
-						},
-						{
-							name : "OS",
-							images : [
-								{name : "HP-UX" , path: "os/hpux.JPG"},
-								{name : "Linux" , path: "os/linux.png"},
-								{name : "NT" , path: "os/NT.PNG"},
-								{name : "Solaris" , path: "os/Solaris.png"},
-								{name : "AIX" , path: "os/aix.PNG"}
-							]
-						},
-						{
-							name : "DB",
-							images : [
-								{name : "H2" , path: "db/H2.png"},
-								{name : "HyperSql" , path: "db/hypersql.png"},
-								{name : "MS-sql" , path: "db/MSSQL.png"},
-								{name : "Oracle" , path: "db/oracle.PNG"},
-								{name : "My-Sql" , path: "db/mysql.PNG"}
-							]
-						},
-						{
-							name : "DISK",
-							images : [
-								{name : "Centera" , path: "disk/centera.png"},
-								{name : "HCP" , path: "disk/hcp.png"},
-								{name : "NetApp" , path: "disk/netapp.PNG"},
-							]
-						},
-						{
-							name : "TOOLS",
-							images : [
-								{name : "GIT" , path: "tools/git.png"},
-								{name : "Jenkins" , path: "tools/jenkins.JPG"},
-								{name : "Docker" , path: "leaned/docker.png"},
-								{name : "Jd-Core" , path: "etc/Jd-Core.PNG"},
-								{name : "Elastic" , path : "etc/elastic.png"},
-								{name : "HazelCast" , path: "tools/HazelCast.PNG"},
-								{name : "Redis" , path: "tools/redis.png"}
-							]
-						},
-						{
-							name : "ETC",
-							images : [
-								{name : "Apache-Common" , path: "etc/Apache-Common.PNG"},
-								{name : "ChartJS" , path: "etc/chartJS.PNG"},
-								{name : "JFreeChart" , path: "etc/JFreeChart.PNG"},
-								{name : "Logback" , path: "etc/Logback.jpg"},
-								{name : "Quartz" , path: "etc/quartz.PNG"},
-								{name : "Vue-Material" , path: "etc/Vue-Material.PNG"},
-								{name : "Vue" , path: "etc/vue.png"},
-								{name : "Vuetify" , path: "etc/vuetify.png"},
-								{name : "JPA-Hbm" , path: "etc/jpa.png"}
-							]
-						}	
-					]
-			}
-		}
-	}
+module.exports = {
+  data: function data() {
+    return {
+		skillItems : [
+			{value : 5 , name : "Java"},
+			{value : 5 , name : "Kotlin"},
+			{value : 3 , name : "C#"},
+			{value : 3 , name : "JavaScript"},
+			{value : 2 , name : "Css"}
+		]
+	};
+  }
+};
 </script>

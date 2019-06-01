@@ -21,13 +21,16 @@
         <h2 class="display-3 font-weight-black primary--text mb-2">Developer</h2>
         <div class="display-1 mb-5">Yuk Yong Soo</div>
         <div>
-          <v-btn flat @click="$vuetify.goTo('#short')">Short Career</v-btn>
+          <v-btn flat @click="$vuetify.goTo('#short')">About Me</v-btn>
         </div>
         <div>
-          <v-btn flat @click="$vuetify.goTo('#skill')">Learn Skill</v-btn>
+          <v-btn flat @click="$vuetify.goTo('#skill')">Skill</v-btn>
         </div>
         <div>
-          <v-btn flat @click="$vuetify.goTo('#history')">Project History</v-btn>
+          <v-btn flat @click="$vuetify.goTo('#skillSet')">Base SkillSet</v-btn>
+        </div>
+        <div>
+          <v-btn flat @click="$vuetify.goTo('#history')">career History</v-btn>
         </div>
         <div>
           <v-btn flat @click="$vuetify.goTo('#dev')">Personal developing</v-btn>
@@ -70,22 +73,21 @@
     </v-navigation-drawer>
 
     <v-content>
-      <div>
-        <logo-component></logo-component>
-        <v-container fluid>
-          <short-component id="short"></short-component>
-          <skill-component id="skill"></skill-component>
-          <history-component id="history"></history-component>
-          <dev-component id="dev"></dev-component>
-        </v-container>
-      </div>
+      <logo-component></logo-component>
+      <v-container fluid>
+        <short-component id="short"></short-component>
+        <skill-component id="skill"></skill-component>
+        <skillset-component id="skillSet"></skillset-component>
+        <history-component id="history"></history-component>
+        <dev-component id="dev"></dev-component>
+      </v-container>
     </v-content>
 
-    <v-footer class="blue darken-2" app>       
-          <div class="white--text ml-5">Made with<v-icon class="red--text">favorite</v-icon>
-            by <a class="white--text" href="https://github.com/yukyongsoo">Yuk Yongsoo</a>
-            . Copyright ©Yuk Yong Soo, All rights reserved.
-          </div>      
+    <v-footer class="blue darken-2" app>
+      <div class="white--text ml-5">Made with<v-icon class="red--text">favorite</v-icon>
+        by <a class="white--text" href="https://github.com/yukyongsoo">Yuk Yongsoo</a>
+        . Copyright ©Yuk Yong Soo, All rights reserved.
+      </div>
     </v-footer>
   </v-app>
   <!-- <script src="/webjars/vue/2.5.16/vue.min.js"></script> -->

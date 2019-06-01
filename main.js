@@ -25,6 +25,7 @@ httpVueLoader.register(Vue, 'view/dev-component.vue');
 httpVueLoader.register(Vue, 'view/history-component.vue');
 httpVueLoader.register(Vue, 'view/short-component.vue');
 httpVueLoader.register(Vue, 'view/skill-component.vue');
+httpVueLoader.register(Vue, 'view/skillset-component.vue');
 httpVueLoader.register(Vue, 'view/hisdetail-component.vue');
 
 Vue.component('logo-component');
@@ -32,6 +33,7 @@ Vue.component('dev-component');
 Vue.component('history-component');
 Vue.component('short-component');
 Vue.component('skill-component');
+Vue.component('skillset-component');
 Vue.component('hisdetail-component');
 
 var main = new Vue({

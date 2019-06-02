@@ -1,8 +1,6 @@
 <template>
   <v-img src="assets/section.jpg" :aspect-ratio="16/10">
     <v-layout column align-center justify-center fill-height>
-      <h1 class="display-2 mb-5 red--text">THIS PAGE UNDER RENEWAL</h1>
-
       <transition appear name="fade">
         <h1 class="display-2 mb-5" style="animation-duration: 5s">Development has never been easier</h1>
       </transition>

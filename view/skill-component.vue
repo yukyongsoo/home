@@ -1,10 +1,10 @@
 <template>
   <v-layout wrap>
     <v-flex>
-      <h4 class="display-1 text-xs-center mb-5">My Education</h4>
+      <h4 class="display-1 text-xs-center mb-5 primary--text">My Education</h4>
       <B class="mb-0">Education</B>
       <p class="mb-0">충북대학교 학사</p>
-      <p>Major in computer engineering ( 3.46 / 4.5 )</p>
+      <p >Major in computer engineering ( 3.46 / 4.5 )</p>
 
       <B class="mb-0">Write Paper</B>
       <p>
@@ -23,7 +23,7 @@
     </v-flex>
 
     <v-flex>
-      <h4 class="display-1 text-xs-center mb-5">My Skill</h4>
+      <h4 class="display-1 text-xs-center mb-5 primary--text">My Skill</h4>
 	  <v-layout class="mb-1" v-for="(item,i) in skillItems" :key="i">
 		  <v-flex><p>{{item.name}}</p></v-flex>
 		  <v-flex><v-rating :value="item.value" readonly></v-rating></v-flex>
@@ -38,7 +38,7 @@ module.exports = {
     return {
 		skillItems : [
 			{value : 5 , name : "Java"},
-			{value : 5 , name : "Kotlin"},
+			{value : 4 , name : "Kotlin"},
 			{value : 3 , name : "C#"},
 			{value : 3 , name : "JavaScript"},
 			{value : 2 , name : "Css"}

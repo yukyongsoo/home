@@ -3,7 +3,7 @@
 <v-layout column class="my-5">
 	<v-flex class="my-5">
 		<div class="text-xs-center">
-        	<h2 class="headline">Base Skill Set</h2>
+        	<h4 class="display-1 primary--text">What I Used In Project</h4>
 		</div>
 	</v-flex>
 	<v-flex wrap>	
@@ -44,10 +44,13 @@
 						{
 							name : "F/W",
 							images : [
-								{name : "RAP" , path: "fw/RAP.PNG"},
-								{name : "Spring Web" , path: "fw/spring.PNG"},
+								{name : "Spring Web/Flux" , path: "fw/springWebflux.PNG"},
+								{name : "Spring" , path: "fw/springFrameWork.png"},
+								{name : "Spring Boot" , path: "fw/springBoot.png"},
+								{name : "Spring Security" , path: "fw/springSecurity.png"},
 								{name : "Spring Cloud", path: "fw/springCloud.PNG"},
-								{name : "Vaadin", path: "fw/vaadin.PNG"}
+								{name : "Vaadin", path: "fw/vaadin.PNG"},
+								{name : "RAP" , path: "fw/RAP.PNG"}
 							]
 						},
 						{
@@ -91,11 +94,11 @@
 							images : [
 								{name : "GIT" , path: "tools/git.png"},
 								{name : "Jenkins" , path: "tools/jenkins.JPG"},
-								{name : "Docker" , path: "leaned/docker.png"},
 								{name : "Jd-Core" , path: "etc/Jd-Core.PNG"},
 								{name : "Elastic" , path : "etc/elastic.png"},
 								{name : "HazelCast" , path: "tools/HazelCast.PNG"},
-								{name : "Redis" , path: "tools/redis.png"}
+								{name : "Redis" , path: "tools/redis.png"},
+								{name : "activemq" , path : "tools/activemq.png"}
 							]
 						},
 						{
@@ -111,7 +114,13 @@
 								{name : "Vuetify" , path: "etc/vuetify.png"},
 								{name : "JPA-Hbm" , path: "etc/jpa.png"}
 							]
-						}	
+						},
+						{
+							name : "Interest",
+							images : [
+								{name : "Docker", path :"interest/docker.png"}
+							]
+						}
 					]
 			}
 		}

@@ -3,7 +3,7 @@
     <v-layout column class="my-5">
       <v-flex xs12 sm4 class="my-5">
         <div class="text-xs-center">
-          <h2 class="headline">Personal developing</h2>
+          <h4 class="display-1 primary--text">What I Developed Alone/Team</h4>
         </div>
       </v-flex>
 
@@ -20,7 +20,7 @@
                 <v-flex>
                   <v-layout row wrap>
                     <v-flex xs12 md8 align-center>
-                      <v-carousel hide-delimiters>
+                      <v-carousel hide-controls>
                         <v-carousel-item
                           v-for="(image,i) in item.images"
                           :key="i"

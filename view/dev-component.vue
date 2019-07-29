@@ -1,9 +1,9 @@
 <template>
   <section>
-    <v-layout column class="my-5">
-      <v-flex xs12 sm4 class="my-5">
-        <div class="text-xs-center">
-          <h4 class="display-1 primary--text">What I Developed Alone/Team</h4>
+    <v-layout column class="my-5" align-center>
+      <v-flex xs12 sm4 lg4 class="my-5">
+        <div>
+          <h4 class="display-1 primary--text text-xs-center">What I Developed Alone/Team</h4>
         </div>
       </v-flex>
 
@@ -11,10 +11,10 @@
         <v-container grid-list-xl>
           <v-layout column>
             <v-flex v-for="(item,i) in items" :key="i">
-              <v-layout column>
+              <v-layout column align-center>
                 <v-flex xs12 md4>
-                  <h2 class="headline">{{item.name}}</h2>
-                  <span class="subheading">{{item.text}}</span>
+                  <h2 class="headline text-xs-center"><v-icon class="blue--text text--lighten-2">{{item.icon}}</v-icon>{{item.name}}</h2>
+                  <span class="subheading" text-xs-center>{{item.text}}</span>
                 </v-flex>
 
                 <v-flex>
@@ -66,7 +66,7 @@ module.exports = {
     return {
       items: [
         {
-          icon: "mdi-color_lens",
+          icon: "color_lens",
           name: "Monitoring",
           text: "Java 어플리케이션 성능 모니터링",
           desc:
@@ -102,7 +102,7 @@ module.exports = {
           ]
         },
         {
-          icon: "mdi-flash_on",
+          icon: "flash_on",
           name: "CSP(ECM)",
           text: "비정형 문서 관리 시스템",
           desc:
@@ -134,7 +134,7 @@ module.exports = {
           images: ["csparch.JPG", "cspmod.JPG"]
         },
         {
-          icon: "mdi-build",
+          icon: "build",
           name: "Team KMS",
           text: "사내 지식 전파 시스템",
           desc:

@@ -1,25 +1,18 @@
 <template>
-  <v-layout wrap class="my-5">
-    <v-flex xs12 lg4 sm4>
-      <div class="headline text-xs-center mb-3">
-        <h5 class="headline">Yuk Yong Soo</h5>
-      </div>
+  <v-layout justify-center class="ma-12" wrap>
+    <v-flex xs12 lg4 sm4 class="mr-12">
       <v-img src="assets/me.png" class="darken-2"></v-img>
     </v-flex>
 
-    <v-flex xs12 lg8 sm8>
+    <v-flex xs12 lg4 sm4>
       <v-layout column>
         <v-flex class="mb-3">
-          <div>
-            <h5 class="headline primary--text text-xs-center">Who Am I</h5>
-            <div class="text-xs-center">코딩에 대한 열정과 사랑으로 오늘을 살아가는 진정한 FullStack 개발자가 되고 싶은 남자!!</div>
-          </div>
+          <h5 class="headline primary--text text-xs-center mb-6">Who Am I</h5>
+          <div class="text-xs-center">코딩에 대한 열정과 사랑으로 오늘을 살아가는 진정한 FullStack 개발자가 되고 싶은 남자!!</div>
         </v-flex>
 
         <v-flex>
-          <div class="headline text-xs-center">
-            <h5 class="primary--text headline">What I can do for you</h5>
-          </div>
+          <h5 class="primary--text headline mb-6">What I can do for you</h5>
           <v-expansion-panels popout>
             <v-expansion-panel v-for="(item,i) in items" :key="i">
               <v-expansion-panel-header>{{item.name}}</v-expansion-panel-header>

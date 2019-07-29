@@ -1,6 +1,6 @@
 <template>
-  <v-layout wrap>
-    <v-flex>
+  <v-layout justify-center wrap>
+    <v-flex xs12 lg4 sm4 class="mr-12">
       <h4 class="display-1 text-xs-center mb-5 primary--text">My Education</h4>
       <B class="mb-0">Education</B>
       <p class="mb-0">충북대학교 학사</p>
@@ -22,7 +22,7 @@
       <p>2018.11 ~ Now : ㈜ 테라핀테크 – 플랫폼 개발</p>
     </v-flex>
 
-    <v-flex>
+    <v-flex xs12 lg4 sm4>
       <h4 class="display-1 text-xs-center mb-5 primary--text">My Skill</h4>
 	  <v-layout class="mb-1" v-for="(item,i) in skillItems" :key="i">
 		  <v-flex><p>{{item.name}}</p></v-flex>

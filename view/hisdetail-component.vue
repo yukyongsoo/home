@@ -4,7 +4,7 @@
 	<v-layout row wrap>
 		
 		<v-flex d-flex xs12 sm3 child-flex>
-        	<v-card dark tile flat>
+        	<v-card tile flat>
           		<v-card-text>프로젝트명</v-card-text>
         	</v-card>
       	</v-flex>
@@ -15,7 +15,7 @@
       </v-flex>
       
       <v-flex d-flex xs12 sm3 child-flex>
-        <v-card dark tile flat>
+        <v-card tile flat>
           <v-card-text>규모</v-card-text>
         </v-card>
       </v-flex>     
@@ -26,7 +26,7 @@
       </v-flex>
 	
       <v-flex d-flex xs12 sm3 child-flex>
-        <v-card dark tile flat>
+        <v-card tile flat>
           <v-card-text>문제점</v-card-text>
         </v-card>
       </v-flex> 
@@ -37,7 +37,7 @@
       </v-flex>
       
       <v-flex d-flex xs12 sm3 child-flex>
-        <v-card dark tile flat>
+        <v-card tile flat>
           <v-card-text>담당 업무</v-card-text>
         </v-card>
       </v-flex>
@@ -48,7 +48,7 @@
       </v-flex>
       
       <v-flex d-flex xs12 sm3 child-flex>
-        <v-card dark tile flat>
+        <v-card tile flat>
           <v-card-text>사용 기술</v-card-text>
         </v-card>
       </v-flex> 
@@ -59,7 +59,7 @@
       </v-flex>
       
       <v-flex d-flex xs12 sm3 child-flex>
-        <v-card dark tile flat>
+        <v-card tile flat>
           <v-card-text>성과</v-card-text>
         </v-card>
       </v-flex>
@@ -72,7 +72,7 @@
       <v-flex d-flex xs12>
         <v-layout column>
           <v-flex d-flex>
-            <v-card  dark tile flat>
+            <v-card  tile flat>
               <v-card-text>업무 내용 </v-card-text>
             </v-card>
           </v-flex>

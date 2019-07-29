@@ -9,7 +9,7 @@
 	<v-flex wrap>	
 			<v-layout row wrap justify-center> 
 				<v-flex md8 xs12>
-					<v-tabs dark>
+					<v-tabs>
 				      <v-tab v-for="(item,i) in itemset" :key="i" ripple>{{item.name}}</v-tab>
 				      <v-tab-item v-for="(item,i) in itemset" :key="i">
 				        <v-card flat>

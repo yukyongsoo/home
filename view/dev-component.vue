@@ -20,7 +20,7 @@
                 <v-flex>
                   <v-layout row wrap>
                     <v-flex xs12 md8 align-center>
-                      <v-carousel hide-controls>
+                      <v-carousel :show-arrows="false">
                         <v-carousel-item
                           v-for="(image,i) in item.images"
                           :key="i"
@@ -66,7 +66,7 @@ module.exports = {
     return {
       items: [
         {
-          icon: "color_lens",
+          icon: "mdi-color_lens",
           name: "Monitoring",
           text: "Java 어플리케이션 성능 모니터링",
           desc:
@@ -102,7 +102,7 @@ module.exports = {
           ]
         },
         {
-          icon: "flash_on",
+          icon: "mdi-flash_on",
           name: "CSP(ECM)",
           text: "비정형 문서 관리 시스템",
           desc:
@@ -134,7 +134,7 @@ module.exports = {
           images: ["csparch.JPG", "cspmod.JPG"]
         },
         {
-          icon: "build",
+          icon: "mdi-build",
           name: "Team KMS",
           text: "사내 지식 전파 시스템",
           desc:

@@ -1,14 +1,19 @@
-Vue.use(Vuetify, {
+const opts = {
     theme: {
-        primary: '#1976D2',
-        secondary: '#424242',
-        accent: '#82B1FF',
-        error: '#FF5252',
-        info: '#2196F3',
-        success: '#4CAF50',
-        warning: '#FFC107'
+        dark: true,
+        themes: {
+            dark: {
+                primary: '#1976D2',
+                secondary: '#424242',
+                accent: '#82B1FF',
+                error: '#FF5252',
+                info: '#2196F3',
+                success: '#4CAF50',
+                warning: '#FFC107'
+            }
+        }
     }
-});
+}
 
 httpVueLoader.httpRequest = function (url) {
     return axios.get(url)
@@ -37,5 +42,5 @@ Vue.component('skillset-component');
 //Vue.component('hisdetail-component');
 
 var main = new Vue({
-
+    vuetify: new Vuetify(opts),
 }).$mount('#app')

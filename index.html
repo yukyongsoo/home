@@ -8,67 +8,74 @@
   <script src="es6-promise.auto.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/vue2-animate/dist/vue2-animate.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <title>Yuk Homepage</title>
 </head>
 
 <body>
-  <v-app id='app' dark>
+  <v-app id='app'>
     <v-navigation-drawer app>
       <v-layout align-center column fill-height py-5>
-        <h2 class="display-3 font-weight-black primary--text mb-2">Developer</h2>
+        <h2 class="display-2 font-weight-black primary--text mb-2">Developer</h2>
         <div class="display-1 mb-5">Yuk Yong Soo</div>
         <div>
-          <v-btn flat @click="$vuetify.goTo('#short')">About Me</v-btn>
+          <v-btn text @click="$vuetify.goTo('#short')">About Me</v-btn>
         </div>
         <div>
-          <v-btn flat @click="$vuetify.goTo('#skill')">Skill</v-btn>
+          <v-btn text @click="$vuetify.goTo('#skill')">Skill</v-btn>
         </div>
         <div>
-          <v-btn flat @click="$vuetify.goTo('#skillset')">Base SkillSet</v-btn>
+          <v-btn text @click="$vuetify.goTo('#skillset')">Base SkillSet</v-btn>
         </div>
         <div>
-          <v-btn flat @click="$vuetify.goTo('#history')">career History</v-btn>
+          <v-btn text @click="$vuetify.goTo('#history')">career History</v-btn>
         </div>
         <div>
-          <v-btn flat @click="$vuetify.goTo('#dev')">Personal developing</v-btn>
+          <v-btn text @click="$vuetify.goTo('#dev')">Personal developing</v-btn>
         </div>
-        <v-list class="transparent mt-auto">
-          <v-list-tile>
-            <v-list-tile-action>
-              <v-icon class="blue--text text--lighten-2">phone</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-content>
-              <v-list-tile-title>010-5004-7887</v-list-tile-title>
-            </v-list-tile-content>
-          </v-list-tile>
-          <v-list-tile>
-            <v-list-tile-action>
-              <v-icon class="blue--text text--lighten-2">place</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-content>
-              <v-list-tile-title>Seoul, KR</v-list-tile-title>
-            </v-list-tile-content>
-          </v-list-tile>
-          <v-list-tile>
-            <v-list-tile-action>
-              <v-icon class="blue--text text--lighten-2">email</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-content>
-              <v-list-tile-title>yozx9079@naver.com</v-list-tile-title>
-            </v-list-tile-content>
-          </v-list-tile>
-          <v-list-tile>
-            <v-list-tile-action>
-              <v-icon class="blue--text text--lighten-2">storage</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-content>
-              <v-list-tile-title>github.com/yukyongsoo</v-list-tile-title>
-            </v-list-tile-content>
-          </v-list-tile>
-        </v-list>
+        <v-card class="transparent mt-auto">
+
+          <v-list-item two-line>
+            <v-list-item-icon>
+              <v-icon class="blue--text text--lighten-2">mdi-phone</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>010-5004-7887</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item two-line>
+            <v-list-item-icon>
+              <v-icon class="blue--text text--lighten-2">mdi-place</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>Seoul, KR</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item two-line>
+            <v-list-item-icon>
+              <v-icon class="blue--text text--lighten-2">mdi-email</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>yozx9079@naver.com</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item two-line>
+            <v-list-item-icon>
+              <v-icon class="blue--text text--lighten-2">mdi-storage</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>github.com/yukyongsoo</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+        </v-card>
       </v-layout>
     </v-navigation-drawer>
 
@@ -84,16 +91,14 @@
     </v-content>
 
     <v-footer class="blue darken-2" app>
-      <div class="white--text ml-5">Made with<v-icon class="red--text">favorite</v-icon>
+      <div class="white--text ml-5">Made with<v-icon class="red--text">mdi-favorite</v-icon>
         by <a class="white--text" href="https://github.com/yukyongsoo">Yuk Yongsoo</a>
         . Copyright ©Yuk Yong Soo, All rights reserved.
       </div>
     </v-footer>
   </v-app>
-  <!-- <script src="/webjars/vue/2.5.16/vue.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vuetify@1.x/dist/vuetify.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script> for 2.0.2 bug-->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
   <script src="main.js"></script>
 </body>
 

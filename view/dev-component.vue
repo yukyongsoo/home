@@ -150,7 +150,7 @@ module.exports = {
             "6. SPI",
             "7. Search Service"
           ],
-          mod: ["현재 화면개발 및 기능개발 진행 중입니다."],
+          mod: ["계약으로 인해 이미지 공개가 불가합니다. ㅠㅠ"],
           demo: "dev",
           images: ["noimg.PNG"]
         }

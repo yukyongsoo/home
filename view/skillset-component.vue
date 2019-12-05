@@ -131,7 +131,7 @@ module.exports = {
             { name: "QuickSight", path: "interest/noimg.png" },
             { name: "Glue", path: "interest/noimg.png" },
             { name: "Amazon MQ", path: "interest/noimg.png" },
-            { name: "Amazon SNS", path: "interest/noimg.png" },
+            { name: "Amazon SNS", path: "interest/noimg.png" }
           ]
         }
       ]

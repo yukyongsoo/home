@@ -115,12 +115,24 @@ module.exports = {
             { name: "Quartz", path: "etc/quartz.PNG" },
             { name: "Vue-Material", path: "etc/Vue-Material.PNG" },
             { name: "Vue", path: "etc/vue.png" },
-            { name: "JPA-Hbm", path: "etc/jpa.png" }
+            { name: "JPA-Hbm", path: "etc/jpa.png" },
+            { name: "Exposed", path: "interest/noimg.png" },
+            { name: "Coroutine", path: "interest/noimg.png" },
           ]
         },
         {
-          name: "Interest",
-          images: [{ name: "Docker", path: "interest/docker.png" }]
+          name: "Cloud",
+          images: [
+            { name: "Elastic Beanstalk", path: "interest/noimg.png" },
+            { name: "ElastiCache", path: "interest/noimg.png" },
+            { name: "CodePipeline", path: "interest/noimg.png" },
+            { name: "X-Ray", path: "interest/noimg.png" },
+            { name: "CloudWatch", path: "interest/noimg.png" },
+            { name: "QuickSight", path: "interest/noimg.png" },
+            { name: "Glue", path: "interest/noimg.png" },
+            { name: "Amazon MQ", path: "interest/noimg.png" },
+            { name: "Amazon SNS", path: "interest/noimg.png" },
+          ]
         }
       ]
     };

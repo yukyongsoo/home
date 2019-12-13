@@ -155,7 +155,7 @@ module.exports = {
           images: ["noimg.PNG"]
         }
       ]
-    };
+    }
   },
   methods: {
     demo: function(name, event) {

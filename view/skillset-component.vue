@@ -22,6 +22,8 @@
                               contain
                               :src="`assets/skill/${image.path}`"
                               class="lighten-2"
+                              max-height="200px" max-width="200px"
+                              min-height="50px" min-width="50px"
                             ></v-img>
                             <div class="body-2">{{image.name}}</div>
                           </v-layout>

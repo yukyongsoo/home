@@ -9,7 +9,7 @@
       <B class="mb-0">Write Paper</B>
       <p>
         <a href="https://www.computer.org/csdl/proceedings/icisa/2013/0602/00/06579462.pdf">
-			ICISA 2013 : Comparison of Extraction Methods for bug Tracking System Analysis</a>
+			ICISA 2013 : Comparison of Extraction Methods for bug Tracking System Analysis 링크</a>
       </p>
 
       <B>Certificate</B>

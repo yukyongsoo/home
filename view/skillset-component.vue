@@ -4,6 +4,7 @@
       <v-flex class="my-5 text-xs-center">
         <div>
           <h4 class="display-1 primary--text ">What I Used In Project</h4>
+          <a href="https://www.stackshare.io/yozx9079/devskill">stackshare.io에 정리된 링크!!</a>
         </div>
       </v-flex>
       <v-flex wrap>

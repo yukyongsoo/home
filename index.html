@@ -1,0 +1,767 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.82.0" />
+
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', '');
+</script>
+
+
+<title></title>
+<style>
+     
+    .rad-fade-in {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in.rad-animate {
+        animation-name: rad-fade-in;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-in-long {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-long-fallback;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-animate {
+        animation-name: rad-fade-in-long;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-down {
+        will-change: opacity, transform;
+        animation-name: rad-fade-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform: translateY(-30px);
+    }
+
+    @keyframes rad-fade-down-fallback {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        75% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fonts-loaded .rad-fade-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .fonts-loaded .rad-fade-down.rad-animate {
+        animation-name: rad-fade-down;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes rad-fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+     
+    .rad-scale-down {
+        will-change: opacity, transform;
+        animation-name: rad-scale-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform-origin: 50% 0;
+    }
+
+    @keyframes rad-scale-down-fallback {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        75% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .fonts-loaded .rad-scale-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    .fonts-loaded .rad-scale-down.rad-animate {
+        animation-name: rad-scale-down;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-scale-down {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+</style>
+
+
+<link rel="stylesheet" href="https://raditian-hugo.radity.com/css/main.css"/>
+
+<link rel="stylesheet" href="https://raditian-hugo.radity.com/css/rad-icons.css"/>
+
+<link rel="stylesheet" href="https://raditian-hugo.radity.com/css/custom.css"/>
+
+
+    
+
+
+</head>
+
+<body>
+
+	<header class="header fixed-top rad-animation-group" id="header">
+  <div class="container rad-fade-in">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand" href="https://raditian-hugo.radity.com/">
+        <span></span>
+        <span></span>
+        
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent, #header"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://raditian-hugo.radity.com/">HOME</a>
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#about"
+              >ABOUT</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#skill"
+              >SKILL</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#experience"
+              >EXPERIENCE</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#portfolio"
+              >WORK</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#contact"
+              >CONTACT</a
+            >
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+	
+	
+<section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+  <div class="rad-showcase__bg">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="https://raditian-hugo.radity.com/img/showcase/showcase.png"
+      data-srcset="https://raditian-hugo.radity.com/img/showcase/showcase.png 1x, https://raditian-hugo.radity.com/img/showcase/showcase@2x.png 2x"
+      alt="Showcase keyboard and mouse image"
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+        <h1 class="display-1">
+          환영합니다!!
+          <br />
+          <span
+            >Back-End Developer</span
+          >
+        </h1>
+        <p class="lead">
+          <span style='font-weight:bold'>8</span>년차 경력을 진행중인 <span style='font-weight:bold'>육용수</span>입니다. <br> 현재 <a target='_blank' href='https://mathflat.com/'>프리윌린</a>에서 백엔드 개발을 담당하고 있습니다. <br> <br> 기타 정보는 아래 링크 아이콘을 클릭해주세요
+        </p>
+      </div>
+    </div>
+    <div class="row platform-links">
+      <div class="col-12">
+        
+        <a href="https://www.linkedin.com/in/yongsoo-yuk-320853166" target="_blank"
+          ><i class="icon-linkedin-line"></i
+        ></a>
+        
+        <a href="https://github.com/yukyongsoo" target="_blank"
+          ><i class="icon-github-line"></i
+        ></a>
+        
+        <a href="https://www.computer.org/csdl/proceedings-article/icisa/2013/06579462/12OmNxFaLj5" target="_blank"
+          ><i class="icon-yelp-line"></i
+        ></a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="rad-showcase__bg rad-showcase__bg--mobile">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="https://raditian-hugo.radity.com/img/showcase/showcase-mobile.jpg"
+      alt="Showcase keyboard and mouse image"
+    />
+  </div>
+</section>
+
+
+	
+	
+<section class="section section--border-bottom rad-animation-group pb-20" id="about">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="about__profile-picture col-12 col-md-6">
+        <img
+          class="lozad img-responsive image-left-overflow"
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://raditian-hugo.radity.com/img/me.png"
+          data-srcset="https://raditian-hugo.radity.com/img/me.png 1x, https://raditian-hugo.radity.com/img/me.png 2x"
+          alt="Profile Picture"
+        />
+      </div>
+      <div class="col-12 col-md-6 my-auto my-auto">
+        <h2>Who am I?</h2>
+        <p class="lead">
+          <p class="lead"> 한 명보다는 두 명이 함께한 의견이 더 좋다고 생각합니다. <br> 항상 배움과 함께하며 배울 것이 많은 사람을 사랑합니다. <br> 기본기는 항상 잊어버리지 않기 위해 노력합니다. <br> 정답보다 좋은 답을 찾습니다. <br> </p> <p class="lead"> <div style="font-weight:bold">Education<br /></div> 충북대학교 학사<br /> Major in computer engineering </p>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+	
+<section id="skill" class="section section--border-bottom">
+  <div class="container">
+    <h2 class=" rad-animation-group rad-fade-down">
+      Major Skill
+    </h2>
+    <div class="row row--padded rad-animation-group rad-fade-down">
+      <div class="col-12">
+        <div class="clients">
+          
+          <div class="clients__item">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://raditian-hugo.radity.com/img/java.PNG"
+                data-srcset="https://raditian-hugo.radity.com/img/java.PNG 1x, https://raditian-hugo.radity.com/img/java.PNG 2x"
+                alt="Java"
+              />
+          </div>
+          
+          <div class="clients__item">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://raditian-hugo.radity.com/img/kotlin.PNG"
+                data-srcset="https://raditian-hugo.radity.com/img/kotlin.PNG 1x, https://raditian-hugo.radity.com/img/kotlin.PNG 2x"
+                alt="Kotlin"
+              />
+          </div>
+          
+          <div class="clients__item">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://raditian-hugo.radity.com/img/spring.PNG"
+                data-srcset="https://raditian-hugo.radity.com/img/spring.PNG 1x, https://raditian-hugo.radity.com/img/spring.PNG 2x"
+                alt="Spring"
+              />
+          </div>
+          
+          <div class="clients__item">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://raditian-hugo.radity.com/img/jpa.png"
+                data-srcset="https://raditian-hugo.radity.com/img/jpa.png 1x, https://raditian-hugo.radity.com/img/jpa.png 2x"
+                alt="JPA"
+              />
+          </div>
+          
+          <div class="clients__item">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://raditian-hugo.radity.com/img/mysql.PNG"
+                data-srcset="https://raditian-hugo.radity.com/img/mysql.PNG 1x, https://raditian-hugo.radity.com/img/mysql.PNG 2x"
+                alt="MySql"
+              />
+          </div>
+          
+          <div class="clients__item">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://raditian-hugo.radity.com/img/redis.PNG"
+                data-srcset="https://raditian-hugo.radity.com/img/redis.PNG 1x, https://raditian-hugo.radity.com/img/redis.PNG 2x"
+                alt="Redis"
+              />
+          </div>
+          
+          <div class="clients__item">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://raditian-hugo.radity.com/img/mq.PNG"
+                data-srcset="https://raditian-hugo.radity.com/img/mq.PNG 1x, https://raditian-hugo.radity.com/img/mq.PNG 2x"
+                alt="ActiveMq"
+              />
+          </div>
+          
+          <div class="clients__item">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://raditian-hugo.radity.com/img/aws.png"
+                data-srcset="https://raditian-hugo.radity.com/img/aws.png 1x, https://raditian-hugo.radity.com/img/aws.png 2x"
+                alt="AWS"
+              />
+          </div>
+          
+          <div class="clients__item">
+            <a href="https://www.stackshare.io/yozx9079/devskill" target="_blank" class="btn btn-primary">
+              <i class="icon-smile-fill"></i>
+              More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+	
+
+	
+	
+<section id="experience" class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row flex-column-reverse flex-md-row rad-fade-down">
+            <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+                
+                <div class="experience">
+                    <div class="experience__date">May 2020 - Now</div>
+                    <div class="experience__title">FreeWheelin</div>
+                    <div class="experience__company">Back-End Developer</div>
+					<div class="experience__detail">1. 기술: Spring boot, Spring Mvc, Spring Data Jpa, Spring Batch, QueryDsl <br> 2. 인프라: Elastic Beanstalk, Elastic Cache, Aurora, S3, Lambda <br> 3. 담당 업무 <br> * 신규 플랫폼 아키텍처 설계 및 API 개발, 데이터베이스 모델 설계 및 마이그레이션 <br> * 배치 시스템 개발 => 기존 크론잡 대체 <br> * 매쓰플랫 일렉트론 클라이언트 개발 <br> * aws 인프라 개선 ( Vpc, 보안그룹 등등 ) <br> * 기존 플랫폼 유지 보수 </div>
+                </div>
+                
+                <div class="experience">
+                    <div class="experience__date">Nov 2018 - Feb 2020</div>
+                    <div class="experience__title">TeraFunding</div>
+                    <div class="experience__company">Jr. Back-End Developer</div>
+					<div class="experience__detail">1. 기술: Exposed, Spring MVC/WebFlux, Kotlin, JPA, Redis, JooQ <br> 2. 인프라: ActiveMq, Aurora, Redis, Aws-Xray <br> 3. 담당 업무 <br> * 포인트 서비스 개발 및 테이블 설계 <br> * 카카오페이 투자 연동. API 개발 및 회의 참여 <br> * SSG 페이 투자 연동. API 개발 및 회의 참여 <br> * 데이터웨어하우스 구축. 투자/약정/상품 데이터 수집 및 변환 <br> * CloudWatch를 통한 서버 인프라 모니터링 시스템 대시보드 구축 <br> * X-ray SDK를 통한 어플리케이션 메트릭 및 메서드 트레이스 구축 <br></div>
+                </div>
+                
+                <div class="experience">
+                    <div class="experience__date">Jan 2016 - Jul 2018</div>
+                    <div class="experience__title">Inzent</div>
+                    <div class="experience__company">Jr. Back-End Developer</div>
+					<div class="experience__detail">1. 기술: Java, javascript, JSP <br> 2. 인프라: Jeus, Oracle, Websphere <br> 3. 담당 업무 <br> * 한국원자력 안전기술원 차세대 시스템 구축. 통합 API 개발 및 파일데이터 이관 <br> * 하나 공전소 이미지 시스템 고도화. AS 에서 AA 를 지원하는 시스템으로 변경 <br> * 롯데캐피탈 모바일 에이전트 개발. 모바일 비대면 신분증 등 다양한 이미지 저장 및 전송을 위한 모듈 개발 <br> * 알리안츠 출금동의서 연동. 출금동의서 문서를 전문(SOAP)을 통해 SAP로 전송하는 기능 개발 <br> </div>
+                </div>
+                
+                <div class="experience">
+                    <div class="experience__date">Jan 2014 - Dec 2015</div>
+                    <div class="experience__title">Spenocom(M&amp;A By Inzent)</div>
+                    <div class="experience__company">Jr. Back-End Developer</div>
+					<div class="experience__detail">1. 기술:  Java, Netty, RCP/RAP,   <br> 2. 인프라: H2, Sqlite <br> 3. 담당 업무 <br> * Engine APM tool 개발. 콘솔 화면 개발 및 설계/서버 파트 인수 및 트러블슈팅  <br> * ECM 엔진 디버깅/기능추가. 버그 픽스 및 신규기능 추가/ 지원팀 트러블슈팅 지원 <br> * 사원/대리 급 교육담당. API 사용법 및 기본 구조 교육. 인프라 및 솔루션 스택 분석 가이드 제공 <br> </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-sm-6">
+                <h2>Experience</h2>
+                <p class="lead">
+                    네트워크, 공간, 처리능력, 구조 사이의 트레이드오프를 고민합니다.<br> java(kotlin), spring, mysql을 중점적으로 다루며 성장하고 있습니다. <br> 최근에는 Kafka에 대한 공부를 시작하고 있습니다. <br> <br> 이력에 관한 자세한 내용은 하단 링크드인을 참조해 주세요! 
+                </p>
+                <a href="https://www.linkedin.com/in/yongsoo-yuk-320853166" class="btn btn-primary"
+                   target="_blank">
+                    <i class="icon-linkedin-fill"></i>
+                    Linkedin
+                    <i class="icon-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+<section id="portfolio" class="section section--border-bottom">
+  <div class="container">
+    <h2 class=" rad-animation-group rad-fade-down">
+      Work
+    </h2>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down "
+    >
+      
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-right-forward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://raditian-hugo.radity.com/img/work/mathflat.png"
+          data-srcset="https://raditian-hugo.radity.com/img/work/mathflat.png 1x, https://raditian-hugo.radity.com/img/work/mathflat.png 2x"
+          alt="매쓰플랫 플랫폼 백엔드 개발"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>매쓰플랫 플랫폼 백엔드 개발</h3>
+        <p class="lead">
+          학원 선생님들의 수업을 양질의 수업을 제공하기 위한 종합 수학문제 플랫폼
+        </p>
+        <a href="https://mathflat.com/" class="btn btn-primary"
+          >사이트<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+    >
+      
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>테라펀딩 플랫폼 백엔드 개발</h3>
+        <p class="lead">
+          건축주와 투자자를 연결하여 서로에게 이득이 되기 위한 P2P 플랫폼
+        </p>
+        <a href="https://terafunding.com/" class="btn btn-primary"
+          >사이트<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-forward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://raditian-hugo.radity.com/img/work/tera.png"
+          data-srcset="https://raditian-hugo.radity.com/img/work/tera.png 1x, https://raditian-hugo.radity.com/img/work/tera.png 2x"
+          alt="테라펀딩 플랫폼 백엔드 개발"
+        />
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down "
+    >
+      
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-right-forward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://raditian-hugo.radity.com/img/work/apmscr1.png"
+          data-srcset="https://raditian-hugo.radity.com/img/work/apmscr1.png 1x, https://raditian-hugo.radity.com/img/work/apmscr1.png 2x"
+          alt="APM(개인 작업)"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>APM(개인 작업)</h3>
+        <p class="lead">
+          기존 코드의 변경없이 성능 측정, 자세한 에러 확인을 위한 어플리케이션 모니터링 툴
+        </p>
+        <a href="https://github.com/yukyongsoo" class="btn btn-primary"
+          >Github<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+
+
+	
+	
+
+	
+	
+<section id="contact" class="section section--contact pt-0">
+    <div class="container">
+        <div class="contact">
+            <h2>Contact</h2>
+            <div class="row pt-2">
+                <div class="col-12 col-lg-7">
+                    <form action="#" method="">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="" id="full_name"
+                                       placeholder="Your Name"/>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="" id="email"
+                                       placeholder="Your Email Address"/>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <textarea name="" id="message"
+                                          cols="30" rows="3" placeholder="Type Your Message Here"></textarea>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="icon-mail-fill"></i>
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-5 contact__info">
+                    <h4>Phone Number</h4>
+                    <span>010-5004-7887</span>
+                    <h4>Email</h4>
+                    <span><a href="mailto:yozx234@gmail.com">yozx234@gmail.com</a></span>
+                    <h4></h4>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+
+	
+
+	<footer class="footer">
+  <div class="container">
+    <div class="footer__left">
+      <div class="footer__copy">
+        
+      </div>
+    </div>
+    <div class="footer__links">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="/">HOME</a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="footer__right">
+      <a href="https://radity.com/"
+        ><img
+          src="https://raditian-hugo.radity.com/"
+          srcset="https://raditian-hugo.radity.com/ 1x, https://raditian-hugo.radity.com/ 2x"
+          alt=""
+      /></a>
+    </div>
+  </div>
+</footer>
+
+    <script src='https://raditian-hugo.radity.com/js/rad-animations.js'></script>
+<script src='https://raditian-hugo.radity.com/js/library/lozad.min.js'></script>
+<script>
+  window.addEventListener("load", function() {
+    var observer = window.lozad(".lozad", {
+      rootMargin: window.innerHeight / 2 + "px 0px",
+      threshold: 0.01
+    }); 
+    observer.observe();
+  });
+</script>
+<script src='https://raditian-hugo.radity.com/js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='https://raditian-hugo.radity.com/js/library/bootstrap.min.js'></script>
+<script src='https://raditian-hugo.radity.com/js/sticky-header.js'></script>
+<script src='https://raditian-hugo.radity.com/js/library/smooth-scroll.polyfills.min.js'></script>
+<script src='https://raditian-hugo.radity.com/js/library/fontfaceobserver.js'></script>
+<script>
+  (function(w) {
+    
+    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+      return;
+    }
+    var fontA = new w.FontFaceObserver("Inter", {
+      weight: 300
+    });
+    var fontB = new w.FontFaceObserver("Inter", {
+      weight: 400
+    });
+    var fontC = new w.FontFaceObserver("Inter", {
+      weight: 500
+    });
+    var fontD = new w.FontFaceObserver("Inter", {
+      weight: 600
+    });
+    var fontE = new w.FontFaceObserver("Inter", {
+      weight: 700
+    });
+    var fontF = new w.FontFaceObserver("Inter", {
+      weight: 900
+    });
+    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+      w.document.documentElement.className += " fonts-loaded";
+    });
+  })(this);
+</script>
+<script>
+  const scroll = new SmoothScroll('a[href*="#"]');
+    $('a.nav-link').on('click', () => {
+      const navbar = $('.navbar-collapse');
+      if (navbar && navbar.hasClass('show')) {
+        $('.navbar-toggler').click();
+      }
+    })
+</script>
+
+</body>
+
+</html>

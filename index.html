@@ -442,22 +442,23 @@
       footer { flex-direction: row; justify-content: space-between; padding: 2rem 4rem; }
       .project-thumb { height: 180px; }
     }
-    .reveal.visible { opacity: 1; transform: none; }  
+    /* ── TOP BUTTON ── */
     .top-btn {
-  position: fixed; bottom: 1.5rem; right: 1.5rem;
-  width: 44px; height: 44px; border-radius: 50%;
-  background: var(--accent); color: var(--bg);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.1rem; font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-  opacity: 0; pointer-events: none;
-  transition: opacity 0.3s, transform 0.3s;
-  z-index: 150;
-}
-.top-btn.visible { opacity: 1; pointer-events: auto; }
-.top-btn:hover { transform: translateY(-3px); background: var(--accent2); }
-  </style>
+      position: fixed; bottom: 1.5rem; right: 1.5rem;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--accent); color: var(--bg);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.3s, transform 0.3s;
+      z-index: 150;
+    }
+    .top-btn.visible { opacity: 1; pointer-events: auto; }
+    .top-btn:hover { transform: translateY(-3px); background: var(--accent2); }
+
+    .reveal.visible { opacity: 1; transform: none; }  </style>
 </head>
 <body>
 
@@ -733,7 +734,7 @@
         </div>
         <div class="project-name">번개장터 플랫폼 백엔드</div>
         <p class="project-desc">취향을 잇는 중고거래 플랫폼. 명품 번개케어/매입/위탁 API 개발 및 공통 모듈·BOM 설계.</p>
-        <a href="https://m.bunjang.co.kr" class="project-link" target="_blank">VIEW SITE →</a>
+        <span class="project-link">VIEW SITE →</span>
       </div>
     </a>
     <a href="https://mathflat.com/" class="project-card" target="_blank" style="text-decoration:none;color:inherit;display:block;">
@@ -746,7 +747,7 @@
         </div>
         <div class="project-name">매쓰플랫 플랫폼 백엔드</div>
         <p class="project-desc">학원 선생님을 위한 종합 수학문제 플랫폼. 신규 아키텍처 설계, 배치 시스템 및 일렉트론 클라이언트 개발.</p>
-        <a href="https://mathflat.com/" class="project-link" target="_blank">VIEW SITE →</a>
+        <span class="project-link">VIEW SITE →</span>
       </div>
     </a>
     <a href="https://terafunding.com/" class="project-card" target="_blank" style="text-decoration:none;color:inherit;display:block;">
@@ -759,7 +760,7 @@
         </div>
         <div class="project-name">테라펀딩 P2P 플랫폼</div>
         <p class="project-desc">건축주와 투자자를 연결하는 P2P 금융 플랫폼. 카카오페이·SSG페이 연동 및 데이터웨어하우스 구축.</p>
-        <a href="https://terafunding.com/" class="project-link" target="_blank">VIEW SITE →</a>
+        <span class="project-link">VIEW SITE →</span>
       </div>
     </a>
     <a href="https://github.com/yukyongsoo" class="project-card" target="_blank" style="text-decoration:none;color:inherit;display:block;">
@@ -772,7 +773,7 @@
         </div>
         <div class="project-name">APM 모니터링 툴 (개인)</div>
         <p class="project-desc">기존 코드 변경 없이 성능 측정 및 상세 에러 확인이 가능한 애플리케이션 모니터링 툴.</p>
-        <a href="https://github.com/yukyongsoo" class="project-link" target="_blank">VIEW GITHUB →</a>
+        <span class="project-link">VIEW GITHUB →</span>
       </div>
     </a>
   </div>
@@ -786,11 +787,11 @@
       <p class="contact-sub">새로운 기회와 도전을 환영합니다.<br>아래 채널로 편하게 연락 주세요.</p>
     </div>
     <div class="contact-links">
-      <a href="mailto:yozx234@gmail.com" class="contact-link">
+      <a href="/cdn-cgi/l/email-protection#1e677164662c2d2a5e79737f7772307d7173" class="contact-link">
         <div class="cl-icon">✉️</div>
         <div class="cl-info">
           <div class="cl-label">EMAIL</div>
-          <div class="cl-val">yozx234@gmail.com</div>
+          <div class="cl-val"><span class="__cf_email__" data-cfemail="3a4355404208090e7a5d575b535614595557">[email&#160;protected]</span></div>
         </div>
         <span class="cl-arrow">→</span>
       </a>
@@ -827,7 +828,8 @@
   <p>© 2025 육용수<span class="footer-dot">.</span> All rights reserved.</p>
   <p>BACK-END DEVELOPER · SEOUL</p>
 </footer>
-  <a href="#" class="top-btn" id="topBtn" aria-label="맨 위로">↑</a>
+
+<a href="#" class="top-btn" id="topBtn" aria-label="맨 위로">↑</a>
 
 <script>
   const hamburger = document.getElementById('hamburger');
@@ -854,10 +856,13 @@
   }, { threshold: 0.08 });
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
   const topBtn = document.getElementById('topBtn');
-window.addEventListener('scroll', () => {
-  topBtn.classList.toggle('visible', window.scrollY > 300);
-});
+  if (topBtn) {
+    window.addEventListener('scroll', () => {
+      topBtn.classList.toggle('visible', window.scrollY > 300);
+    });
+  }
 </script>
 </body>
 </html>

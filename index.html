@@ -442,7 +442,22 @@
       footer { flex-direction: row; justify-content: space-between; padding: 2rem 4rem; }
       .project-thumb { height: 180px; }
     }
-    .reveal.visible { opacity: 1; transform: none; }  </style>
+    .reveal.visible { opacity: 1; transform: none; }  
+    .top-btn {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--accent); color: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 150;
+}
+.top-btn.visible { opacity: 1; pointer-events: auto; }
+.top-btn:hover { transform: translateY(-3px); background: var(--accent2); }
+  </style>
 </head>
 <body>
 
@@ -812,6 +827,7 @@
   <p>© 2025 육용수<span class="footer-dot">.</span> All rights reserved.</p>
   <p>BACK-END DEVELOPER · SEOUL</p>
 </footer>
+  <a href="#" class="top-btn" id="topBtn" aria-label="맨 위로">↑</a>
 
 <script>
   const hamburger = document.getElementById('hamburger');
@@ -838,6 +854,10 @@
   }, { threshold: 0.08 });
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  const topBtn = document.getElementById('topBtn');
+window.addEventListener('scroll', () => {
+  topBtn.classList.toggle('visible', window.scrollY > 300);
+});
 </script>
 </body>
 </html>
